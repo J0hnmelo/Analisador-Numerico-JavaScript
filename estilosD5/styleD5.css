@@ -1,0 +1,66 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(49, 111, 245);
+}
+header > h1 {
+    color: white;
+}
+main {
+    width: 45%;
+    padding: 1%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    font-size: 1.5em;
+}
+#i-numeros {
+    margin:0;
+    text-align: center;
+    width: 40%;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+}
+#botaoAdicionar,
+#botaoVerificar {
+    width: 17%;
+    padding: 5px;
+    font-size: 0.7em;
+    background-color: chartreuse;
+    font-weight: bold;
+}
+select {
+    height: 200px;
+    text-align: center;
+}
+footer {
+    font-size: 1.5em;    
+}
+@media screen and (min-width: 200px) and (max-width: 764px) {
+    body {
+        height: 100vh;
+    }
+    main {
+        width: 80%;
+        text-align: center;
+    }
+    #botaoAdicionar,
+    #botaoVerificar {
+        font-size: 0.5em;
+    }
+   
+    
+}
+@media screen and (min-width: 765px) and (max-width: 1024px){
+    main {
+        width: 80%;
+    }
+}
